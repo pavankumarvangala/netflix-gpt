@@ -10,7 +10,7 @@ const VideoTitle = ({ title, overview }) => {
           ▶️ Play
         </button>
         <button className="mx-3 bg-gray-500 py-3 px-8 rounded-md text-white">
-          ℹ️ More Info
+          More Info
         </button>
       </div>
     </div>
