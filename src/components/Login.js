@@ -21,7 +21,6 @@ const Login = () => {
   const email = useRef(null);
   const password = useRef(null);
   const handleButtonClick = () => {
-    console.log(email.current.value, password.current.value);
     const message = validateFormData(
       email.current.value,
       password.current.value
@@ -55,8 +54,6 @@ const Login = () => {
             .catch((error) => {
               setErrorMessage(error.message);
             });
-
-          console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;

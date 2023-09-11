@@ -50,7 +50,6 @@ const Header = () => {
     dispatch(toggleGptSearch());
   };
   const handleLangChange = (e) => {
-    console.log(e.target.value);
     dispatch(changeAppLanguage(e.target.value));
   };
   return (

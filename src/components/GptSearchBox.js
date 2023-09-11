@@ -15,12 +15,9 @@ const GptSearchBox = () => {
       API_OPTIONS
     );
     const json = await data.json();
-    console.log(json);
     return json.results;
   };
   const handleGptSearch = async () => {
-    // make an api call
-    console.log(searchText.current.value);
     const gptQuery =
       "Act as a movie recommendaion system and suggest some movie for query " +
       searchText.current.value +
@@ -29,16 +26,13 @@ const GptSearchBox = () => {
       messages: [{ role: "user", content: gptQuery }],
       model: "gpt-3.5-turbo",
     });
-    console.log(searchResults.choices);
     const movieResultList =
       searchResults.choices?.[0]?.message?.content.split(",");
-    console.log(movieResultList);
     const moviesList = movieResultList.map((movie) => serachMoviesList(movie));
     const movieData = await Promise.all(moviesList);
     dispatch(
       addMovieResults({ movieNames: movieResultList, movieResults: movieData })
     );
-    console.log(movieData);
   };
   return (
     <div className="w-full flex justify-center">
