@@ -20,3 +20,6 @@ export const IMG_URL = "https://image.tmdb.org/t/p/w500/";
 
 export const BG_URL =
   "https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/64774cd8-5c3a-4823-a0bb-1610d6971bd4/IN-en-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg";
+
+export const OPEN_AI_KEY =
+  "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";

@@ -1,6 +1,7 @@
 import React from "react";
 import GptSearchBox from "./GptSearchBox";
 import { BG_URL } from "../utils/constants";
+import GptMovieSuggestions from "./GptMovieSuggestions";
 
 const GptSearch = () => {
   return (
@@ -10,6 +11,7 @@ const GptSearch = () => {
       </div>
       <div className="pt-[10%]">
         <GptSearchBox />
+        <GptMovieSuggestions />
       </div>
     </div>
   );
